@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /archive/
+Disallow: /terms.html
+Disallow: /en/terms.html
+Sitemap: https://my-athletics.eu/sitemap.xml
