@@ -112,7 +112,7 @@
 @media(max-width:767px){
  .coaches-page .coach-wrap{padding-inline:24px}
  .coaches-page .coach-hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:28px;padding-block:44px 24px}
- .coaches-page .coach-hero h1{font-size:70px;letter-spacing:-1px;margin-block:24px}
+ .coaches-page .coach-hero h1{font-size:clamp(48px,15vw,60px);letter-spacing:-1px;margin-block:24px;overflow-wrap:anywhere}
  .coaches-page .coach-lead{font-size:16px}
  .coaches-page .coach-actions{gap:14px;align-items:stretch}
  .coaches-page .coach-actions .button{width:100%}
@@ -149,7 +149,7 @@
  .coaches-page #komunikacija .coach-connector{top:4px;left:55%;width:76px}
  .coaches-page .coach-scene-tag{display:none}
 }
-@media(max-width:359px){.coaches-page .coach-wrap{padding-inline:20px}.coaches-page .coach-hero h1{font-size:60px}.coaches-page .coach-scene,.coaches-page .coach-hero .coach-scene{height:420px}.coaches-page .coach-finale .coach-scene{height:450px}}
+@media(max-width:359px){.coaches-page .coach-wrap{padding-inline:20px}.coaches-page .coach-hero h1{font-size:48px}.coaches-page .coach-scene,.coaches-page .coach-hero .coach-scene{height:420px}.coaches-page .coach-finale .coach-scene{height:450px}}
 @media(prefers-reduced-motion:reduce){
  .coaches-page{scroll-behavior:auto}
  .coaches-page.coach-motion-ready .coach-reveal{opacity:1;transform:none!important;transition:none}
