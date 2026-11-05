@@ -1,0 +1,158 @@
+/* Only the new coaches page uses these styles. */
+.coaches-page{--coach-light:#e6eedf;--coach-lime:#c8ddae}
+.coaches-page .coaches-main{padding:0;max-width:none}
+.coaches-page #navigation>a[aria-current="page"]{text-decoration:underline;text-underline-offset:6px}
+.coaches-page .coach-wrap{width:100%;max-width:1440px;margin-inline:auto;padding-inline:80px}
+.coaches-page .coach-hero{background:#173e32;color:#f6f7f1;overflow:hidden;overflow:clip}
+.coaches-page .coach-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);align-items:center;gap:48px;padding-block:70px 42px}
+.coaches-page .coach-kicker{font-size:11px;font-weight:600;letter-spacing:1.8px;line-height:1.6;text-transform:uppercase;color:#626e65;display:flex;gap:10px;align-items:center}
+.coaches-page .coach-kicker::before{content:"";height:6px;width:6px;flex:none;background:currentColor}
+.coaches-page .coach-hero .coach-kicker{color:#c8ddae}
+.coaches-page .coach-hero h1{font-size:clamp(76px,7.6vw,110px);letter-spacing:-1.7px;line-height:.98;color:#f6f7f1;margin-block:28px}
+.coaches-page .coach-hero h1 span{color:#c8ddae}
+.coaches-page .coach-lead{font-size:19px;line-height:1.65;max-width:520px;color:#c7d5cb}
+.coaches-page .coach-actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;margin-top:32px}
+.coaches-page .coach-actions .button{background:#c8ddae;color:#102c24}
+.coaches-page .coach-actions .button:hover{background:#e1efcf}
+.coaches-page .coach-text-link{color:inherit;text-underline-offset:5px;font-size:14px;font-weight:500;min-height:44px;display:inline-flex;align-items:center}
+.coaches-page .coach-hero-note{font-size:11px;line-height:1.7;color:#bdcec2;margin-top:24px;max-width:400px}
+.coaches-page .coach-topics{border-top:1px solid #466153;display:flex;flex-wrap:wrap;gap:10px 32px;padding-block:22px 28px}
+.coaches-page .coach-topics a{color:#c7d5cb;font-size:12px;min-height:36px;display:inline-flex;align-items:center;gap:10px;text-decoration:none}
+.coaches-page .coach-topics a:hover{color:#fff;text-decoration:underline}
+.coaches-page .coach-topics a span{color:#c8ddae;font-size:10px;font-weight:600}
+.coaches-page .coach-section{overflow:hidden;overflow:clip;background:#fff}
+.coaches-page .coach-section:nth-of-type(odd){background:#f6f7f1}
+.coaches-page .coach-section-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;column-gap:64px;padding-block:96px}
+.coaches-page .coach-section-reverse .coach-copy{grid-column:2;grid-row:1}
+.coaches-page .coach-section-reverse .coach-scene{grid-column:1;grid-row:1}
+.coaches-page .coach-copy{min-width:0;position:relative;z-index:5}
+.coaches-page .coach-section h2{font-size:clamp(48px,4.5vw,66px);line-height:1.02;margin-block:24px;color:#173e32}
+.coaches-page .coach-description{color:#626e65;font-size:17px;line-height:1.7;max-width:475px}
+.coaches-page .coach-points{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:14px}
+.coaches-page .coach-points li{display:flex;gap:12px;font-size:14px;color:#202b25;align-items:flex-start}
+.coaches-page .coach-points li::before{content:"↗";font-size:17px;line-height:1.4;color:#173e32;flex:none}
+.coaches-page .coach-section-number{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:17px;color:#173e32;border:1px solid #cdd6ca;border-radius:50%;width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;margin-right:8px;letter-spacing:0}
+.coaches-page .coach-scene{--scene-shift:0px;position:relative;isolation:isolate;width:100%;max-width:660px;height:610px;margin-inline:auto;min-width:0}
+.coaches-page .coach-scene::before{content:"";position:absolute;width:90%;height:82%;left:5%;top:9%;border-radius:50% 45% 48% 42%;background:#e6eedf;z-index:-2;transform:rotate(-8deg)}
+.coaches-page .coach-scene::after{content:"";position:absolute;width:76%;height:72%;left:12%;top:14%;border:1px solid #c6d5bf;border-radius:48%;z-index:-1;transform:rotate(12deg)}
+.coaches-page .coach-hero .coach-scene{height:670px}
+.coaches-page .coach-hero .coach-scene::before{background:#254f3c;width:104%;left:0;height:88%;top:4%}
+.coaches-page .coach-hero .coach-scene::after{border-color:#4c7057}
+.coaches-page .coach-device{position:absolute;margin:0;width:240px;max-width:46%;line-height:0;z-index:2}
+.coaches-page .coach-device img{display:block;width:100%;height:auto;filter:drop-shadow(0 22px 16px rgba(19,46,33,.18));transform:translateY(var(--scene-shift));transition:transform .15s linear}
+.coaches-page .coach-device-main{left:50%;top:45px;width:260px;transform:translateX(-50%) rotate(1deg);z-index:3}
+.coaches-page .coach-device-left{left:0;top:104px;width:214px;transform:rotate(-6deg)}
+.coaches-page .coach-device-left img{transform:translateY(calc(var(--scene-shift) * -.6))}
+.coaches-page .coach-device-right{right:0;top:124px;width:205px;transform:rotate(6deg)}
+.coaches-page .coach-device-right img{transform:translateY(calc(var(--scene-shift) * .5))}
+.coaches-page .coach-scene-two .coach-device-main{left:35%;top:45px;transform:translateX(-50%) rotate(-4deg)}
+.coaches-page .coach-scene-two .coach-device-right{width:230px;top:130px;right:1%;z-index:4}
+.coaches-page .coach-callout{position:absolute;z-index:6;left:8%;bottom:15px;background:#173e32;color:#f6f7f1;border:1px solid #345b44;box-shadow:0 8px 20px #173e3210;padding:12px 16px;border-radius:10px;font-size:12px;line-height:1.5;max-width:220px}
+.coaches-page .coach-callout::before{content:"↗";font-size:18px;line-height:1;margin-right:10px;color:#c8ddae}
+.coaches-page .coach-hero .coach-callout{background:#c8ddae;color:#173e32;border:0;bottom:10px;left:18%}
+.coaches-page .coach-hero .coach-callout::before{color:#173e32}
+.coaches-page .coach-connector{position:absolute;left:12%;top:18px;width:100px;height:68px;color:#7c9b71;z-index:4;transform:rotate(-6deg);pointer-events:none}
+.coaches-page .coach-hero .coach-connector{color:#c8ddae;top:0}
+.coaches-page .coach-connector path{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.coaches-page .coach-finale{background:#173e32;color:#f6f7f1;overflow:hidden;overflow:clip}
+.coaches-page .coach-finale .coach-wrap{padding-block:88px 72px;text-align:center}
+.coaches-page .coach-finale .coach-kicker{justify-content:center;color:#c8ddae}
+.coaches-page .coach-finale h2{color:#f6f7f1;font-size:72px;margin:24px auto;max-width:700px}
+.coaches-page .coach-finale .coach-description{color:#c7d5cb;max-width:620px;margin-inline:auto}
+.coaches-page .coach-finale .coach-scene{max-width:780px;height:650px;margin-top:32px;text-align:left}
+.coaches-page .coach-finale .coach-scene::before{background:#284e3b}
+.coaches-page .coach-finale .coach-scene::after{border-color:#4c7057}
+.coaches-page .coach-finale .coach-device-main{width:268px;top:30px}
+.coaches-page .coach-finale .coach-device-left{left:7%;width:218px;top:112px}
+.coaches-page .coach-finale .coach-device-right{right:7%;width:218px;top:122px}
+.coaches-page .coach-finale .coach-actions{justify-content:center;margin-top:0}
+.coaches-page .coach-finale .coach-callout{left:50%;bottom:12px;transform:translateX(-50%);white-space:nowrap;max-width:none}
+.coaches-page .coach-finale .coach-connector{color:#c8ddae;left:20%}
+.coaches-page .coach-bottom-note{font-size:12px;color:#c7d5cb;margin-top:24px}
+.coaches-page.coach-motion-ready .coach-reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .85s cubic-bezier(.2,.65,.25,1)}
+.coaches-page.coach-motion-ready .coach-scene.coach-reveal{transform:translateX(32px)}
+.coaches-page.coach-motion-ready .coach-section-reverse .coach-scene.coach-reveal{transform:translateX(-32px)}
+.coaches-page.coach-motion-ready .coach-reveal.is-visible{opacity:1;transform:none}
+.coaches-page.coach-motion-ready .coach-scene.coach-reveal.is-visible{transform:none}
+/* The messaging reference informs the composition, not the screen contents. */
+.coaches-page #komunikacija{background:#173e32;color:#f6f7f1}
+.coaches-page #komunikacija h2{color:#f6f7f1}
+.coaches-page #komunikacija .coach-kicker{color:#c8ddae}
+.coaches-page #komunikacija .coach-section-number{border-color:#6b8c76;color:#c8ddae}
+.coaches-page #komunikacija .coach-description{color:#c7d5cb}
+.coaches-page #komunikacija .coach-points li{color:#f6f7f1}
+.coaches-page #komunikacija .coach-points li::before{color:#c8ddae}
+.coaches-page #komunikacija .coach-scene{height:690px}
+.coaches-page #komunikacija .coach-scene::before{width:108%;left:-4%;height:92%;top:3%;border-radius:40px;background:radial-gradient(ellipse at 0% 0%,#b9e6a6 0%,#4baf68 36%,#197447 65%,#174b33 100%);transform:rotate(-3deg)}
+.coaches-page #komunikacija .coach-scene::after{border-color:#c8ddae70;border-width:2px;width:130%;height:70%;left:-20%;top:17%;border-radius:50%;transform:rotate(-32deg)}
+.coaches-page #komunikacija .coach-device-main{width:300px;max-width:56%;left:33%;top:28px;transform:translateX(-50%) rotate(-5deg)}
+.coaches-page #komunikacija .coach-device-right{width:255px;max-width:47%;top:126px;right:0;transform:rotate(5deg)}
+.coaches-page #komunikacija .coach-connector{color:#fff;left:43%;top:12px;transform:rotate(16deg)}
+.coaches-page #komunikacija .coach-callout,.coaches-page .coach-scene-tag{background:#173e32d9;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#f6f7f1;border:1px solid #c8ddae80;box-shadow:0 12px 28px #102c2426}
+.coaches-page #komunikacija .coach-callout{bottom:-18px;left:4%}
+.coaches-page .coach-scene-tag{position:absolute;right:-2%;top:0;z-index:6;max-width:220px;padding:14px 16px;border-radius:16px;display:flex;gap:12px;align-items:center;font-size:13px;line-height:1.5}
+.coaches-page .coach-scene-tag img{width:36px;height:36px;flex:none;padding:8px;background:#f6f7f1;border-radius:50%}
+@media(min-width:768px) and (max-width:1199px){
+ .coaches-page .coach-wrap{padding-inline:40px}
+ .coaches-page .coach-hero-grid,.coaches-page .coach-section-grid{gap:32px}
+ .coaches-page .coach-hero h1{font-size:80px}
+ .coaches-page .coach-lead{font-size:17px}
+ .coaches-page .coach-scene,.coaches-page .coach-hero .coach-scene{height:530px}
+ .coaches-page .coach-device-main{width:220px;max-width:56%;top:60px}
+ .coaches-page .coach-device-left{width:160px;max-width:44%;top:115px}
+ .coaches-page .coach-device-right{width:155px;max-width:43%;top:148px}
+ .coaches-page .coach-scene-two .coach-device-right{width:190px}
+ .coaches-page .coach-section-grid{padding-block:72px}
+ .coaches-page .coach-callout{bottom:0;font-size:11px;padding:10px 12px}
+ .coaches-page #komunikacija .coach-scene{height:570px}
+ .coaches-page #komunikacija .coach-device-main{width:240px}
+ .coaches-page #komunikacija .coach-device-right{width:210px}
+ .coaches-page .coach-scene-tag{font-size:11px;max-width:180px;padding:10px}
+}
+@media(max-width:767px){
+ .coaches-page .coach-wrap{padding-inline:24px}
+ .coaches-page .coach-hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:28px;padding-block:44px 24px}
+ .coaches-page .coach-hero h1{font-size:70px;letter-spacing:-1px;margin-block:24px}
+ .coaches-page .coach-lead{font-size:16px}
+ .coaches-page .coach-actions{gap:14px;align-items:stretch}
+ .coaches-page .coach-actions .button{width:100%}
+ .coaches-page .coach-actions .coach-text-link{justify-content:center;width:100%}
+ .coaches-page .coach-hero-note{margin-top:16px;font-size:11px}
+ .coaches-page .coach-topics{gap:4px 20px;padding-block:16px 24px}
+ .coaches-page .coach-topics a{font-size:11px}
+ .coaches-page .coach-section-grid{display:flex;flex-direction:column;align-items:stretch;gap:24px;padding-block:56px}
+ .coaches-page .coach-section h2{font-size:46px;margin-block:22px}
+ .coaches-page .coach-description{font-size:16px}
+ .coaches-page .coach-kicker{font-size:10px;letter-spacing:1.1px}
+ .coaches-page .coach-points{margin-top:22px;gap:12px}
+ .coaches-page .coach-points li{font-size:13px}
+ .coaches-page .coach-scene,.coaches-page .coach-hero .coach-scene{height:460px;max-width:430px}
+ .coaches-page .coach-device-main{width:174px;max-width:54%;top:36px}
+ .coaches-page .coach-device-left{width:136px;max-width:43%;top:98px;left:0;transform:rotate(-4deg)}
+ .coaches-page .coach-device-right{width:132px;max-width:42%;top:118px;right:0;transform:rotate(4deg)}
+ .coaches-page .coach-scene-two .coach-device-main{left:32%;top:26px;width:174px;max-width:54%}
+ .coaches-page .coach-scene-two .coach-device-right{width:162px;max-width:50%;top:100px;right:0}
+ .coaches-page .coach-connector{width:76px;left:4%;top:0;height:52px}
+ .coaches-page .coach-callout{font-size:11px;padding:10px 12px;bottom:4px;left:6%;max-width:220px}
+ .coaches-page .coach-hero .coach-callout{left:12%;bottom:4px}
+ .coaches-page .coach-finale .coach-wrap{padding-block:56px}
+ .coaches-page .coach-finale h2{font-size:50px}
+ .coaches-page .coach-finale .coach-scene{height:490px;margin-top:24px}
+ .coaches-page .coach-finale .coach-device-main{width:180px;top:36px}
+ .coaches-page .coach-finale .coach-device-left{width:138px;left:0;top:110px}
+ .coaches-page .coach-finale .coach-device-right{width:138px;right:0;top:118px}
+ .coaches-page .coach-finale .coach-callout{font-size:10px;white-space:normal;text-align:center;width:max-content;max-width:95%}
+ .coaches-page #komunikacija .coach-scene{height:500px}
+ .coaches-page #komunikacija .coach-device-main{width:184px;top:32px;left:30%}
+ .coaches-page #komunikacija .coach-device-right{width:160px;top:142px;right:0}
+ .coaches-page #komunikacija .coach-callout{bottom:-14px;left:0}
+ .coaches-page #komunikacija .coach-connector{top:4px;left:55%;width:76px}
+ .coaches-page .coach-scene-tag{display:none}
+}
+@media(max-width:359px){.coaches-page .coach-wrap{padding-inline:20px}.coaches-page .coach-hero h1{font-size:60px}.coaches-page .coach-scene,.coaches-page .coach-hero .coach-scene{height:420px}.coaches-page .coach-finale .coach-scene{height:450px}}
+@media(prefers-reduced-motion:reduce){
+ .coaches-page{scroll-behavior:auto}
+ .coaches-page.coach-motion-ready .coach-reveal{opacity:1;transform:none!important;transition:none}
+ .coaches-page .coach-device img{transform:none!important;transition:none}
+ html:has(.coaches-page){scroll-behavior:auto}
+}
