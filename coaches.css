@@ -1,4 +1,21 @@
 /* Only the new coaches page uses these styles. */
+/* The hero carousel changes positions; the app screenshots remain untouched. */
+.coaches-page .coach-hero .coach-carousel .coach-carousel-slide{left:50%;right:auto;top:48px;width:260px;max-width:46%;z-index:1;opacity:0;pointer-events:none;backface-visibility:hidden;will-change:transform,opacity;transform-origin:center;transition:left .65s cubic-bezier(.2,.65,.25,1),transform .65s cubic-bezier(.2,.65,.25,1),opacity .65s ease,filter .65s ease}
+.coaches-page .coach-hero .coach-carousel [data-position="center"]{left:50%;z-index:5;opacity:1;filter:none;transform:translate3d(-50%,0,0) rotate(0) scale(1)}
+.coaches-page .coach-hero .coach-carousel [data-position="left"]{left:0;z-index:3;opacity:.5;filter:brightness(.8);transform:translate3d(0,65px,0) rotate(-8deg) scale(.82)}
+.coaches-page .coach-hero .coach-carousel [data-position="right"]{left:100%;z-index:3;opacity:.5;filter:brightness(.8);transform:translate3d(-100%,65px,0) rotate(8deg) scale(.82)}
+.coaches-page .coach-hero .coach-carousel [data-position="back-left"]{transform:translateX(-90%) translateY(90px) rotate(-10deg) scale(.65)}
+.coaches-page .coach-hero .coach-carousel [data-position="back-right"]{transform:translateX(-10%) translateY(90px) rotate(10deg) scale(.65)}
+.coaches-page .coach-carousel-controls{position:absolute;right:0;bottom:6px;display:flex;align-items:center;gap:5px;padding:4px;border:1px solid #73917d;border-radius:10px;background:#173e32;color:#f6f7f1;z-index:8;line-height:1}
+.coaches-page .coach-carousel-controls[hidden]{display:none}
+.coaches-page .coach-carousel-counter{font-size:10px;font-variant-numeric:tabular-nums;padding:0 5px;white-space:nowrap}
+.coaches-page .coach-carousel-controls button{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:0;border-radius:6px;background:transparent;color:#f6f7f1;font:600 20px/1 Inter,sans-serif;cursor:pointer}
+.coaches-page .coach-carousel-controls button:hover{background:#315d45}
+.coaches-page .coach-carousel-controls button:focus-visible{outline:2px solid #c8ddae;outline-offset:2px}
+.coaches-page .coach-carousel-controls button:disabled{opacity:.5;cursor:default}
+@media(min-width:768px) and (max-width:1199px){.coaches-page .coach-hero .coach-carousel .coach-carousel-slide{width:220px;max-width:56%}}
+@media(max-width:767px){.coaches-page .coach-hero .coach-carousel .coach-carousel-slide{width:174px;max-width:54%}.coaches-page .coach-hero .coach-carousel .coach-callout{top:0;bottom:auto;left:0;background:transparent;padding:0;color:#c8ddae;font-size:11px}.coaches-page .coach-hero .coach-carousel .coach-callout::before{color:#c8ddae}.coaches-page .coach-carousel-controls{right:0;bottom:0}}
+@media(prefers-reduced-motion:reduce){.coaches-page .coach-hero .coach-carousel .coach-carousel-slide{transition:none}}
 .coaches-page{--coach-light:#e6eedf;--coach-lime:#c8ddae}
 .coaches-page .coaches-main{padding:0;max-width:none}
 .coaches-page #navigation>a[aria-current="page"]{text-decoration:underline;text-underline-offset:6px}
